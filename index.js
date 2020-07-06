@@ -39,14 +39,10 @@ bot.on("message", async msg => { // eslint-disable-line
             .setColor("#7289DA")
             .setAuthor(bot.user.tag, bot.user.displayAvatarURL)
             .setDescription(`
-**أوامر البوت**
-**> play : تشغيل الاغنية او اضافتها للقائمة او اكمال الاغنية [p] **
-**> pause : ايقاف مؤقت الاغنية  **
-**> resume : اكمال الاغنية **
-**> stop : لأيقاف الأغنية وخروج البوت من الروم**
-**> queue or q : عرض القائمة **
-**> volume or vol : لتعليه او تخفيض صوت البوت**
-**> Nowplaying : عرض مايتم تشغيله الان [np] **
+__**Commands List**__
+> \`play OR p\` > **\`play (URL-Name)\`**
+> \`skip OR s\`, \`stop OR leave OR disconnect\`,  \`pause\`, \`resume\`
+> \`nowplaying\`, \`queue\`, \`volume\``)
             .setFooter("©️ 2020 Classic Development : Classic", "https://app.zealcord.xyz/assets/Logo.png");
         msg.channel.send(helpembed);
     }
